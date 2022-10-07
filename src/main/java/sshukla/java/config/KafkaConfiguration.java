@@ -20,5 +20,13 @@ public class KafkaConfiguration {
                 .replicas(1)
                 .build();
     }
+    @Bean
+    public NewTopic createMyTopicJson(){
+        return TopicBuilder
+                .name("mytopic_json")
+                .partitions(2)
+                .replicas(1)
+                .build();
+    }
 
 }
